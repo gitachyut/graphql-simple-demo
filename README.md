@@ -21,7 +21,7 @@ Edit `config/config.json` :
     "development": {
         "username": "root",
         "password": null,
-        "database": "sequelize-example",
+        "database": "DB",
         "host": "127.0.0.1",
         "dialect": "mysql"
     },
@@ -48,7 +48,7 @@ Run the project :
 npm start
 ```
 
-Open GraphiQL in your browser [http://localhost:8088/graphql](http://localhost:8088/graphql)
+Open GraphiQL in your browser [http://localhost:8000/graphql](http://localhost:8000/graphql)
 
 ## Examples
 
@@ -88,8 +88,8 @@ Add new author and get his ID:
 ```graphql
 mutation{
   createAuthor(author:{
-    name:"Kent",
-    last_name:"Beck"
+    name:"Achyut",
+    last_name:"Deka"
   }) {
     id
   }
