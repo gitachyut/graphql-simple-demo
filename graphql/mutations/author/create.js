@@ -9,7 +9,7 @@ export default {
             type: AuthorInput
         }
     },
-    resolve (source, args) {
+    resolve (source, args) {        
         return models.author.build({
             name: args.author.name,
             last_name: args.author.last_name
